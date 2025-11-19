@@ -46,3 +46,10 @@ Modbus TCP integráció:
   - A "START" gomb megnyomása indítja a normál üzemet, a lámpák ciklikus működését. Mielőtt a lámpák belépnének ezen ismétlődő ciklusaikba, egyszer végigmennek az indítás utáni procedúrán: sárga villogás, majd mindkét lámpa piros a beállított időtartamokra.
   - A "FAULT" gomb megnyomása üzemzavar állapotba teszi a lámpákat: sárga villogás.
   - A "MODE SELECT" felkapcsolásával (TRUE) a kommunikáció Modbus TCP szerveren keresztül megy végbe, alapesetben (FALSE) HMI-n keresztül. Modbus módban tehát a kívülről (pl. Modbus Poll által) megadott értékekkel futnak a program időzítői, HMI módban pedig az írható táblázatban lehet megadni az időzítők értékeit. Maximum érték: 65535, mértékegység: ms.
+
+~ Inputok magyarázata:
+  - Indítási sárga villogás: az egyszer végbemenő, indítás (START) utáni procedúra sárga villogásának időtartama.
+  - Indítási két-piros idő: az egyszer végbemenő, indítás (START) utáni procedúra mindkét irányú piros jelzésének időtartama.
+  - Biztonsági két-piros idő: biztonsági okokból ha az egyik irányú lámpa ciklusa végigment és váltás következik, egy rövid időre mindkét lámpa pirosan világít. Ennek időtartama adható meg ezen inputtal.
+  - Sárga lámpa idő: a zöld vagy piros jelzést váltó sárga időtartama.
+  - Zöld lámpa idő: a zöld jelzés időtartama.
