@@ -40,3 +40,9 @@ Modbus TCP integráció:
   - Állapotgép: CASE szerkezet
   - Vizualizáció: dinamikus színváltás (BOOL → fill color)
   - Kommunikáció: HMI és Modbus TCP (opcionális)
+
+~ Leírás:
+  - A "Start" gomb megnyomásáig a lámpák semleges állapotban maradnak, azaz sárgán villognak.
+  - A "Start" gomb megnyomása indítja a normál üzemet, a lámpák ciklikus működését. Mielőtt a lámpák belépnének ezen ismétlődő ciklusaikba, egyszer végigmennek az indítás utáni procedúrán: sárga villogás, majd mindkét lámpa piros a beállított időtartamokra.
+  - A "Fault" gomb megnyomása üzemzavar állapotba teszi a lámpákat: sárga villogás.
+  - A "Switch" felkapcsolásával (TRUE) a kommunikáció Modbus TCP szerveren keresztül megy végbe, alapesetben (FALSE) HMI-n keresztül. Modbus módban tehát a kívülről (pl. Modbus Poll által) megadott értékekkel futnak a program időzítői, HMI módban pedig az írható táblázatban lehet megadni az időzítők értékeit. Maximum érték: 65535, mértékegység: ms.
