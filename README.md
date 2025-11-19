@@ -2,7 +2,7 @@
 
 🚦 TrafficLight – Közlekedési lámpa vezérlő (CODESYS)
 
-A TrafficLight egy CODESYS-alapú PLC-projekt, amely két klasszikus közlekedési lámpa teljes vezérlését valósítja meg. A projekt demonstrálja a Structured Text állapotgépet, az időzítők használatát, a vizualizáció (HMI) lehetőségeit és a Modbus TCP integrációt.
+A TrafficLight egy CODESYS-alapú PLC-projekt, amely két klasszikus közlekedési lámpa teljes vezérlését valósítja meg. A projekt tartalmaz Structured Text nyelven írt programkódot, demonstrálja az időzítők használatát, a vizualizáció (HMI) lehetőségeit és a Modbus TCP integrációt.
 
 ~ Funkciók
 
