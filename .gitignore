@@ -1,0 +1,57 @@
+###############################
+# General
+###############################
+*.tmp
+*.log
+*.bak
+*.old
+*.cache
+*.swp
+
+# Temp / IDE generated
+temp/
+tmp/
+cache/
+logs/
+out/
+build/
+_bin/
+_generated/
+
+###############################
+# TwinCAT / Beckhoff
+###############################
+*.tpy
+*.compiled-library
+*.library
+*.TcObj
+*.TcProj.bak
+*.TcZipped
+*.Restore
+*.plcproj.user
+*.suo
+
+# TwinCAT build output
+*/_Boot/
+*/_CompileInfo/
+*/_Config/
+*/_Libraries/
+*/_AppData/
+
+###############################
+# CODESYS
+###############################
+*.project.user
+*.project.backup
+*.settings/
+*.codesysbackup
+*.compile
+
+###############################
+# Siemens TIA Portal
+###############################
+*.ap11.bak
+*.ap15.bak
+*.ap16.bak
+*.tibkp
+*.tmproj.user
